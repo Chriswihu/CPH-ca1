@@ -30,7 +30,7 @@ public class PersonResource {
     @GET
     @Path("/{id}")
     @Produces({MediaType.APPLICATION_JSON})
-    public Response getById(@PathParam("id") int id) throws EntityNotFoundException, InstantiationException, IllegalAccessException {
+    public Response getById(@PathParam("id") int id) throws EntityNotFoundException {
         PersonDTO p = FACADE.getById(id);
         return Response.ok().entity(GSON.toJson(p)).build();
     }

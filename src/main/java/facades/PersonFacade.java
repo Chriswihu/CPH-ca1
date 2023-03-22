@@ -54,7 +54,7 @@ public class PersonFacade implements IPerson {
     }
 
     @Override
-    public PersonDTO getById(int id) throws EntityNotFoundException, InstantiationException, IllegalAccessException {
+    public PersonDTO getById(int id) throws EntityNotFoundException {
         EntityManager em = getEntityManager();
         Person p = em.find(Person.class, id);
         if (p == null)
