@@ -1,6 +1,6 @@
 package entities;
 
-import dtos.AddressDto;
+import dtos.AddressDTO;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -54,7 +54,7 @@ public class Address {
         this.addinfo = addinfo;
     }
 
-    public void add(AddressDto addressDto) {
+    public void add(AddressDTO addressDto) {
     }
 
     public void setPerson(Person p) {

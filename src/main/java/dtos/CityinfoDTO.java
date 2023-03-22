@@ -10,13 +10,13 @@ import java.util.Objects;
 /**
  * A DTO for the {@link Cityinfo} entity
  */
-public class CityinfoDto implements Serializable {
+public class CityinfoDTO implements Serializable {
     private final Integer id;
     @Size(max = 45)
     @NotNull
     private final String cityname;
 
-    public CityinfoDto(Integer id, String cityname) {
+    public CityinfoDTO(Integer id, String cityname) {
         this.id = id;
         this.cityname = cityname;
     }
@@ -33,7 +33,7 @@ public class CityinfoDto implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        CityinfoDto entity = (CityinfoDto) o;
+        CityinfoDTO entity = (CityinfoDTO) o;
         return Objects.equals(this.id, entity.id) &&
                 Objects.equals(this.cityname, entity.cityname);
     }
