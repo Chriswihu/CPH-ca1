@@ -58,23 +58,23 @@ public class Person {
         this.age = age;
     }
 
-    @OneToOne(mappedBy = "person")
-    private Phone phone;
-    public Phone getPhone() {
-        return phone;
-    }
-    public void setPhone(Phone phone) {
-        this.phone = phone;
-    }
+//    @OneToOne(mappedBy = "person")
+//    private Phone phone;
+//    public Phone getPhone() {
+//        return phone;
+//    }
+//    public void setPhone(Phone phone) {
+//        this.phone = phone;
+//    }
 
-    @OneToOne(mappedBy = "address")
-    private Address address;
-    public Address getAddress() {
-        return address;
-    }
-    public void setAddress(Address address) {
-        this.address = address;
-    }
+//    @OneToOne(mappedBy = "address")
+//    private Address address;
+//    public Address getAddress() {
+//        return address;
+//    }
+//    public void setAddress(Address address) {
+//        this.address = address;
+//    }
 
     public Person() {
     }
@@ -84,8 +84,8 @@ public class Person {
         this.firstname = firstname;
         this.lastname = lastname;
         this.age = age;
-        this.address = address;
-        this.phone = phone;
+//        this.address = address;
+//        this.phone = phone;
     }
 
 
