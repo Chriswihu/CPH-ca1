@@ -21,9 +21,9 @@ public class Phone {
     @Column(name = "description", nullable = false, length = 45)
     private String description;
 
-    @OneToOne
-    @JoinColumn(name = "personid", referencedColumnName = "id")
-    private Person person;
+//    @OneToOne
+//    @JoinColumn(name = "personid", referencedColumnName = "id")
+//    private Person person;
 
     public Integer getId() {
         return id;

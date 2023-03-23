@@ -23,7 +23,7 @@ public class PersonDTO {
 //
 //    private Address address = new Address();
 
-    public PersonDTO(int id, String email, String firstname, String lastname, int age) throws InstantiationException, IllegalAccessException {
+    public PersonDTO(int id, String email, String firstname, String lastname, int age) {
         this.id = id;
         this.email = email;
         this.firstname = firstname;
