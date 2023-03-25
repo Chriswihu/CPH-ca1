@@ -45,7 +45,7 @@ public class PersonFacade implements IPerson {
             em.getTransaction().begin();
 //            p.getPhone().setPerson(p);
 //            p.getAddress().setPerson(p);
-            em.persist(p);
+            em.persist(person);
             em.getTransaction().commit();
         } finally {
             em.close();
